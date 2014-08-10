@@ -1,5 +1,6 @@
 ## import the data to R
-data <- read.csv("household_power_consumption.txt", sep = ";", stringsAsFactors=F, na.strings="?")
+data <- read.csv("household_power_consumption.txt", sep = ";", 
+                 stringsAsFactors=F, na.strings="?")
 
 ## subset the desired date range
 pwr <- data[data$Date == "1/2/2007" | data$Date == "2/2/2007",]
